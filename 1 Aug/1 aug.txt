@@ -1,0 +1,182 @@
+Operators and conditions
+
+arithmetic
+logical
+relational
+bitwise
+
+first octate
+8421
+
+AND
+0-15
+
+8421
+1101  .--13
+0111  --7
+1100 --12
+
+
+
+OR
+1101
+0111
+------
+1111
+
+
+128 64 32 16 8 4 2 1
+ 1  1  1  1  1 1 1 1
+
+
+Bitwise left shift
+11  -  1011
+#formula -- number * 2*bit
+#8<<1 
+ 128 64 32 16 8 4 2 1
+  0   0  0 0  1 0 0 0  ---  left shift 
+  0   0  0 1  0 0 0 0  ---  8 becomes 16 
+
+---------------------------------------
+Bitwise right shift
+11  -
+11>>1  #11//2**bit
+
+#formula -- number // 2**bit
+#44//2*2  --  44//4    --->>11
+0000 1011   --- shift right 1
+0000 0101    -- now 11 became 5
+
+
+---------------Assignment---------
+Compiler
+1. Bitwise XOR
+2. Interpreter , Encoder ,Compiler
+3. Precedence
+
+--1. take 3 var and if all three are int then add
+
+
+a=10
+b=23
+c=9.3
+
+if((type(a) is int) and (type(b) is int) and (type(c) is int)):
+    print(a+b+c)
+else:
+    print("One of them is not int")
+
+-------------------------------------------
+--2. 3 var check which is smallest among all
+
+
+a=10
+b=2
+c=9
+
+if((a<b) and (a<c)):
+  print("a is small")
+elif(b<a and b<c):
+  print("b is small")
+else:
+  print("c is small")
+------------------------------------------
+--3. input from user and get output on condition
+     value>18 -- print value is more than 18
+     value25-30 -- print value is bw 25 and 35
+     value>40
+     else value is less than 18
+
+
+
+user=int(input("Enter a number"))
+
+if(user>40):
+    print("Value is greater than 18")
+elif(user>=30 and user<=25):
+    print("Value is b/w 25 and 30")
+elif(user>18):
+    print("Value is more than 18")
+else:
+    print("Value is less than 18")
+
+---------------------------------------------------------
+-- 4.take  a input from the user 
+    perform task
+    input ==1 print current date
+import datetime
+
+x = datetime.datetime.now()
+print(x)
+    input ==2  make desktop folder
+    input ==3  print desktop files
+    input ==4 send a msg in whatsapp to your friend
+            account hacked
+    else print invalid input
+
+
+import os
+import datetime
+import pywhatkit
+
+inp=int(input("Enter a choice (1-4) : "))
+
+if(inp==1):
+    print(datetime.datetime.now())
+elif(inp==2):
+    path = "Desktop"
+    dir_list = os.listdir(path) 
+    print("Files and directories in '", path, "' :")  
+    # print the list 
+    print(dir_list) 
+elif(inp==3):
+    directory = "PythonLinux"
+    # Parent Directory path 
+    parent_dir = "Desktop"
+    # Path 
+    path = os.path.join(parent_dir, directory)
+    os.mkdir(path) 
+    print("Directory '% s' created" % directory) 
+elif(inp==4):
+    #pywhatkit.sendwhatmsg("+918005524478","Ji!",20, 30)
+    print("pywhatkit sent message succesfully!")
+else:
+    print("Enter valid input!")
+--------------------------------------------------------------
+-- 5. input from user and check datatype==int or float
+      then check even or odd
+
+
+
+n=float(input("Enter a no to check even or odd: "))
+
+if((type(n)==int) or (type(n)==float)):
+  if(n%2==0):
+    print("Even")
+  else:
+    print("Odd")
+else:
+  print("Enter a valid number!")
+----------------------------------------------------------
+--6.input a string from user and we will check string is present in it or not(checking )
+
+
+
+ch=input("Enter your gmail: ")
+
+if("@gmail.com" in ch):
+    print("Email Verified")
+else:
+    print("Enter valid gmail!")
+    
+---------------------------------------------------------------------------
+--7. take a char from user as a input and check whether the char is not a vowel(capital or small)
+
+
+ch=input("Enter a character: ")
+
+if(ch=='a' or ch=='e' or ch=='i' or ch=='o' or ch=='u' or ch=='A' or ch=='E' or ch=='I' or ch=='O' or ch=='U'):
+    print("Vowel")
+else:
+    print("Consonant")
+    
