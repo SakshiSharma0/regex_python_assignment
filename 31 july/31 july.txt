@@ -1,0 +1,86 @@
+Python -- guido van rossum
+
+-- programming
+-- easy to use
+-- syntax is easy
+-- interpreter based programming language
+-- Dynamic typed
+             x = 10
+-- functional and oops (class and objects)
+-- scripting language
+
+why python ??
+- worldwide applicable
+- development
+- software
+  web: Django, bottle, flask
+- cyber security
+-Data Science
+- AWS cloud
+-set of library
+
+IDE - Integrated Development Environment
+
+Anaconda
+Pycharm
+Vs code
+Jupiter 
+Spyder
+
+
+shift+enter
+ctrl+enter
+
+
+int ans tring are immutable
+
+
+int,string,float,boolean,complex
+set,dictionary,frozenset,list,tuple
+
+comment vs docstring
+
+
+
+
+python support
+-- call by object refernece 
+
+CONCEPT of mutable and immutable
+
+
+#immutable datatype because memory address changed
+#mutable datatype because memory address NOT changed
+
+-----------------------------------------
+
+f="t"
+
+full="t"
+print(f,id(f),full,id(full))
+#memory address is same here
+-----------------------------------------------------
+
+f="t"
+print(f,id(f))
+
+f="g"
+print(f,id(f))
+
+#immutable datatype because memory address changed
+
+----------------------------------------------------
+
+s=RAJASTHAN
+  012345678
+          -4-3-2-1
+PRINT(s[0:4]
+
+
+_________________ASSIGNMENTS___________
+
+1. DOCSTRING VS COMMENT
+2. IDENTIFIER VS KEYWORD
+3. PROCEDURAL VS OBJECT ORIETED PROGRAMMING
+4. C VS PYTHON
+5. NAMESPACE IN PYTHON
