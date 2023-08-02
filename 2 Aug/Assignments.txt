@@ -1,0 +1,56 @@
+1. Positive or Negative No
+
+no=int(input("Enter a no : "))
+if(no>0):
+    print("positive")
+elif(no<0):
+    print("negative")
+elif(no==0):
+    print("a is zero")
+
+-------------------------------------------
+
+2. a,b,c threee sides input and check triangle is equilateral,rightangled or isoceles
+
+a,b,c=input("Enter three sides of triangles : ").split()
+a=int(a)
+b=int(b)
+c=int(c)
+if(a==b==c):
+    print("Equilateral")
+elif(a==b or a==c or b==c):
+    print("Isoceles")
+elif( (a*a+b*b==c*c) or (c*c+b*b==a*a) or (a*a+c*c==b*b)):
+    print("Right Angled")
+else:
+    print("Enter valid side")
+
+----------------------------------------------------------
+
+3.  A is greater than b
+
+a,b=input("Enter two no : ").split() 
+a=int(a) 
+b=int(b) 
+if(a>b): 
+    print("A max") 
+else: 
+    print("B max")
+
+
+
+------------------------------------------------------------
+
+4.palindrome
+
+n=int(input("Enter a no : "))
+sum=0
+temp=n
+while(n>0):
+    rem=int(n%10)
+    sum=int(sum*10+rem)
+    n//=10
+if(temp==sum):
+    print("Palindrome")
+else:
+    print("Not Palindrome")
